@@ -1,3 +1,6 @@
+
+此系统是大二 Visual Basic.NET 这门课的课程设计作品，实验报告如下：
+
 系统概述
 ========
 
@@ -16,7 +19,7 @@
 
 此系统包含了大部分需要的功能，为用户提供了图书分类、图书搜索以及排行榜的功能。针对用户的功能：注册、登录、修改密码、开通会员；针对管理员的功能：新增图书、修改图书信息、删除图书。如下图：
 
-![](media/69f3d271782690900bc962a77aae4974.png)
+![image](https://github.com/HotEmotion/Txt-Reader/blob/master/imgFloder/jiegou.png)
 
 图 小说阅读器功能
 
@@ -28,25 +31,25 @@
 
 （1）存储图书信息的表：Book ，如下图
 
-![](media/117a999a71295f4142e4edc3e4e1c3c9.png)
+![image](https://github.com/HotEmotion/Txt-Reader/blob/master/imgFloder/jiegou.png)
 
 图 Book表
 
 （2）存储目录信息的表：Category ，如下图
 
-![](media/549d792be6d5646ecd6060540f14e5f9.png)
+![image](https://github.com/HotEmotion/Txt-Reader/blob/master/imgFloder/categoryTable.png)
 
 图 Category表
 
 （3）存储用户信息的表：Users ，如下图
 
-![](media/9e3e07a8b69c007574b77d79aa170db4.png)
+![image](https://github.com/HotEmotion/Txt-Reader/blob/master/imgFloder/userTable.png)
 
 图 Users表
 
 （4）存储用户安全信息的表：UserSecurity ，如下图
 
-![](media/43b1097d78380fd7c980cd049f06a58e.png)
+![image](https://github.com/HotEmotion/Txt-Reader/blob/master/imgFloder/securityTable.png)
 
 图 UserSecurity表
 
@@ -122,19 +125,19 @@ End Sub
 
 （1）启动程序后显示主界面，点击主界面的控件会调用其他窗口实现相应的功能，以下是主界面与其他窗口的调用图。
 
-![](media/88a3370a6aaa155c132b16e98306d05a.png)
+![image](https://github.com/HotEmotion/Txt-Reader/blob/master/imgFloder/form.png)
 
 图 主界面对其他窗口的调用
 
 （2）主界面图
 
-![](media/fe6d01f1bb83c8af060ad3b6f46a9afe.png)
+![image](https://github.com/HotEmotion/Txt-Reader/blob/master/imgFloder/main%20(3).png)
 
 图 主界面
 
 （3）显示在主页面中的排行榜，排行榜图书取所有图书浏览次数前十位，如下图。
 
-![](media/b1dcc5c5feed97692951731be5bddf6f.png)
+![image](https://github.com/HotEmotion/Txt-Reader/blob/master/imgFloder/paihang.png)
 
 图 排行榜
 
@@ -143,7 +146,7 @@ End Sub
 
 （1）登录功能流程图如下：
 
-![](media/f5233e0c88048b48c02eadcdb4c5e4ac.png)
+![image](https://github.com/HotEmotion/Txt-Reader/blob/master/imgFloder/logintu.png)
 
 图 登录功能流程图
 
@@ -151,13 +154,13 @@ End Sub
 
 打开登录界面，输入用户名及密码；
 
-![](media/5f5e7262ae43d7efc02f085ee3e3ccbe.png)
+![image](https://github.com/HotEmotion/Txt-Reader/blob/master/imgFloder/login.png)
 
 图 登录功能流程图
 
 登录成功，界面如图所示
 
-![](media/d868200c888cb53af433e4a8427d8f98.png)
+![image](https://github.com/HotEmotion/Txt-Reader/blob/master/imgFloder/main%20(2).png)
 
 图 登录成功界面
 
@@ -168,7 +171,7 @@ End Sub
 
 （1）注册功能流程图如下：
 
-![](media/1fd253b9ff580b9f8420cb37fbfb4478.png)
+![image](https://github.com/HotEmotion/Txt-Reader/blob/master/imgFloder/registertu.png)
 
 图 注册功能流程图
 
@@ -176,23 +179,23 @@ End Sub
 
 打开注册界面，输入用户信息，并勾选用户协议；
 
-![](media/2ca41c3fc454a05baa39b6c452acf06b.png)
+![image](https://github.com/HotEmotion/Txt-Reader/blob/master/imgFloder/register.png)
 
 图 注册第一步
 
 输入安全问题；
 
-![](media/ad95dffd4b9ffda67b85c899e833e119.png)
+![image](https://github.com/HotEmotion/Txt-Reader/blob/master/imgFloder/setting.png)
 
 图 设置安全问题
 
 数据库信息已录入，注册成功；
 
-![](media/ee23a893fd98d865422dcf7cde82ac9c.png)
+![image](https://github.com/HotEmotion/Txt-Reader/blob/master/imgFloder/example%20(2).png)
 
 图 Users表信息已录入
 
-![](media/f3d93994b615e13c4b946d63a117069a.png)
+![image](https://github.com/HotEmotion/Txt-Reader/blob/master/imgFloder/example%20(3).png)
 
 图 UserSecurity表信息已录入
 
@@ -201,7 +204,7 @@ End Sub
 
 （1）修改密码流程图
 
-![](media/ff2826f6f44d64e1449c06327a9a5934.png)
+![image](https://github.com/HotEmotion/Txt-Reader/blob/master/imgFloder/ff2826f6f44d64e1449c06327a9a5934.png)
 
 图 修改密码流程图
 
@@ -209,25 +212,25 @@ End Sub
 
 在登录界面点击忘记密码，进入界面，输入用户名和邮箱；
 
-![](media/3cb8d085f6faa7fe1324131b36549080.png)
+![image](https://github.com/HotEmotion/Txt-Reader/blob/master/imgFloder/return.png)
 
 图 找回密码第一步
 
 输入信息验证用户；
 
-![](media/f957c09c4f78070460420e46efdf5e19.png)
+![image](https://github.com/HotEmotion/Txt-Reader/blob/master/imgFloder/yanzheng.png)
 
 图 找回密码第二步
 
 输入新密码；
 
-![](media/1c29e5239cdf7e0d416cbe8d7c00f99b.png)
+![image](https://github.com/HotEmotion/Txt-Reader/blob/master/imgFloder/xiugaimima.png)
 
 图 找回密码第三步
 
 查看数据库，数据已更新，原来是456789，现在是123456；
 
-![](media/ac0d2d17604d0dcd7c86d8fd8536192c.png)
+![image](https://github.com/HotEmotion/Txt-Reader/blob/master/imgFloder/example.png)
 
 图 修改密码后数据更新
 
@@ -241,13 +244,13 @@ End Sub
 
 显示开通VIP界面；
 
-![](media/f206bac74b4f02b9ff2cd4633a432424.png)
+![image](https://github.com/HotEmotion/Txt-Reader/blob/master/imgFloder/zhifu.png)
 
 图 开通VIP
 
 点击微信图标，显示二维码；
 
-![](media/8326282fb4f6c81ed759546b35bd1d6e.png)
+![image](https://github.com/HotEmotion/Txt-Reader/blob/master/imgFloder/wx.png)
 
 图 二维码窗口
 
@@ -258,7 +261,7 @@ End Sub
 
 （1）分类界面，点击目录会显示书的相关信息：
 
-![](media/34d7e65f42fb5536b489ff9c5fe4d294.png)
+![image](https://github.com/HotEmotion/Txt-Reader/blob/master/imgFloder/tree.png)
 
 图 分类窗口
 
@@ -269,7 +272,7 @@ End Sub
 
 点击分类及属性会相应显示相关书籍
 
-![](media/e1bd469acdc91295f69b1038af953abb.png)
+![image](https://github.com/HotEmotion/Txt-Reader/blob/master/imgFloder/select.png)
 
 图 搜索窗口
 
@@ -280,31 +283,31 @@ End Sub
 
 （1）点击分类窗口、搜索窗口、排行榜控件中的书本都会触发阅读器窗口（注意：只有VIP才能看VIP书籍），加载阅读器窗口会出现一个进度条窗口（时间比较短，未截图）；
 
-![](media/9491a7618c7389e05971e180125ee63b.png)
+![image](https://github.com/HotEmotion/Txt-Reader/blob/master/imgFloder/txt.png)
 
 图 阅读窗口1
 
 点击上一页、下一页、最后一页、第一页会切换页数，点击字体修改其属性，出现字体对话框；
 
-![](media/8453f1ea6d0a45729e67b834dd4d2888.png)
+![image](https://github.com/HotEmotion/Txt-Reader/blob/master/imgFloder/gaiseduihuakuang.png)
 
 图 文字对话框
 
 点击确定；
 
-![](media/3f7f2203c31747d7750f24e05b761f46.png)
+![image](https://github.com/HotEmotion/Txt-Reader/blob/master/imgFloder/wenzhang.png)
 
 图 阅读窗口2
 
 点击背景色，出现颜色对话框；
 
-![](media/dc28b626db07f539e75f0f5c525d52d4.png)
+![image](https://github.com/HotEmotion/Txt-Reader/blob/master/imgFloder/xiugaiyanse.png)
 
 图 颜色对话框
 
 点击确定；
 
-![](media/e3f9b11fd3cbdc6417807b3f84dc095b.png)
+![image](https://github.com/HotEmotion/Txt-Reader/blob/master/imgFloder/txt%20(2).png)
 
 图 阅读窗口3
 
@@ -315,19 +318,19 @@ End Sub
 
 （1）管理图书界面
 
-![](media/931d1273e11cbd427ec1b4991e814c95.png)
+![image](https://github.com/HotEmotion/Txt-Reader/blob/master/imgFloder/command.png)
 
 图 管理图书创库界面
 
 （2）新增图书功能流程图
 
-![](media/5c5bdbdc5d346d7060bfaaba2c5679e2.png)
+![image](https://github.com/HotEmotion/Txt-Reader/blob/master/imgFloder/add.png)
 
 图 新增图书功能流程图
 
 （2）删除图书功能流程图
 
-![](media/9571d4fcd6dd4e6f0f126b6bbd0feeb6.png)
+![image](https://github.com/HotEmotion/Txt-Reader/blob/master/imgFloder/delete.png)
 
 图 删除图书功能流程图
 
