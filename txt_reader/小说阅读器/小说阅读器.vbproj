@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6E36781C-239E-41FF-8534-EB052E5C0EEC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>小说阅读器.My.MyApplication</StartupObject>
+    <RootNamespace>小说阅读器</RootNamespace>
+    <AssemblyName>小说阅读器</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>小说阅读器.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>小说阅读器.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="backimage.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>backimage.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Book.vb" />
+    <Compile Include="Category.vb" />
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SqlHelper.vb" />
+    <Compile Include="User.vb" />
+    <Compile Include="主界面.Designer.vb">
+      <DependentUpon>主界面.vb</DependentUpon>
+    </Compile>
+    <Compile Include="主界面.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="二维码.Designer.vb">
+      <DependentUpon>二维码.vb</DependentUpon>
+    </Compile>
+    <Compile Include="二维码.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="修改密码.Designer.vb">
+      <DependentUpon>修改密码.vb</DependentUpon>
+    </Compile>
+    <Compile Include="修改密码.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="开通会员.Designer.vb">
+      <DependentUpon>开通会员.vb</DependentUpon>
+    </Compile>
+    <Compile Include="开通会员.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="找回密码.Designer.vb">
+      <DependentUpon>找回密码.vb</DependentUpon>
+    </Compile>
+    <Compile Include="找回密码.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="搜索界面.Designer.vb">
+      <DependentUpon>搜索界面.vb</DependentUpon>
+    </Compile>
+    <Compile Include="搜索界面.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="用户中心.Designer.vb">
+      <DependentUpon>用户中心.vb</DependentUpon>
+    </Compile>
+    <Compile Include="用户中心.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="用户协议.Designer.vb">
+      <DependentUpon>用户协议.vb</DependentUpon>
+    </Compile>
+    <Compile Include="用户协议.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="用户注册.Designer.vb">
+      <DependentUpon>用户注册.vb</DependentUpon>
+    </Compile>
+    <Compile Include="用户注册.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="用户登录.Designer.vb">
+      <DependentUpon>用户登录.vb</DependentUpon>
+    </Compile>
+    <Compile Include="用户登录.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="用户验证.Designer.vb">
+      <DependentUpon>用户验证.vb</DependentUpon>
+    </Compile>
+    <Compile Include="用户验证.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理员登录.Designer.vb">
+      <DependentUpon>管理员登录.vb</DependentUpon>
+    </Compile>
+    <Compile Include="管理员登录.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理图书.Designer.vb">
+      <DependentUpon>管理图书.vb</DependentUpon>
+    </Compile>
+    <Compile Include="管理图书.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="设置安全问题.Designer.vb">
+      <DependentUpon>设置安全问题.vb</DependentUpon>
+    </Compile>
+    <Compile Include="设置安全问题.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="读取txt文件中...Designer.vb">
+      <DependentUpon>读取txt文件中...vb</DependentUpon>
+    </Compile>
+    <Compile Include="读取txt文件中...vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="阅读器.Designer.vb">
+      <DependentUpon>阅读器.vb</DependentUpon>
+    </Compile>
+    <Compile Include="阅读器.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="backimage.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>backimage.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="主界面.resx">
+      <DependentUpon>主界面.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="二维码.resx">
+      <DependentUpon>二维码.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="修改密码.resx">
+      <DependentUpon>修改密码.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="开通会员.resx">
+      <DependentUpon>开通会员.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="找回密码.resx">
+      <DependentUpon>找回密码.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="搜索界面.resx">
+      <DependentUpon>搜索界面.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="用户中心.resx">
+      <DependentUpon>用户中心.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="用户协议.resx">
+      <DependentUpon>用户协议.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="用户注册.resx">
+      <DependentUpon>用户注册.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="用户登录.resx">
+      <DependentUpon>用户登录.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="用户验证.resx">
+      <DependentUpon>用户验证.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理员登录.resx">
+      <DependentUpon>管理员登录.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理图书.resx">
+      <DependentUpon>管理图书.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="设置安全问题.resx">
+      <DependentUpon>设置安全问题.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="读取txt文件中...resx">
+      <DependentUpon>读取txt文件中...vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="阅读器.resx">
+      <DependentUpon>阅读器.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VB登录前背景.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\用户1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\用户2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\用户3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\用户4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1513818038842.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mm_facetoface_collect_qrcode_1513818005892.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\空二维码.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\未标题-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\支付宝.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\微信支付.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\支付宝支付.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\背景.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
